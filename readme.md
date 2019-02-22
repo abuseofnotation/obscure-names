@@ -5,7 +5,7 @@ A command-line tool that generates random names and sorts them by obscurity by s
 Usage
 ===
 
-The command accepts a schema parameter where you specify a pattern based on which names will be generated
+Checkout the repo and exec `bin/obscure-names`. The command accepts a schema parameter where you specify a pattern based on which names will be generated
 
 - `v` - vowel
 - `c` - consonant
@@ -17,7 +17,7 @@ You can add your own symbols by editing `schema.js`.
 So, for example this command would return names which contain a vowel, a consonant and another vowel (like `aba`, `ovi` etc.)
 
 ```
-node obscure-names.js --schema vcv
+bin/obscure-names --schema vcv
 ```
 
 On the second stage, the tool uses Bing search (Google is also supported, but it is very restrictive so its turned off) to check which of these names are most obscure.
